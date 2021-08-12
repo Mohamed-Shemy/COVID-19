@@ -3,21 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5206E864D98E6F913CB3BEE7 /* Pods_COVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07F72BAB1CC151AE2B4981 /* Pods_COVID19.framework */; };
 		D9167E2C26C4B50400007BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E2B26C4B50400007BEB /* AppDelegate.swift */; };
 		D9167E3526C4B50900007BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9167E3426C4B50900007BEB /* Assets.xcassets */; };
 		D9167E3826C4B50900007BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9167E3626C4B50900007BEB /* LaunchScreen.storyboard */; };
+		D9167E4B26C4BD3B00007BEB /* MoyaServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E4A26C4BD3B00007BEB /* MoyaServiceHelper.swift */; };
+		D9167E4E26C4BEDD00007BEB /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E4D26C4BEDD00007BEB /* ActivityIndicator.swift */; };
+		D9167E5226C4BF2C00007BEB /* UIViewController + NVActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E5126C4BF2C00007BEB /* UIViewController + NVActivityIndicator.swift */; };
+		D9167E5726C4BFAF00007BEB /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E5626C4BFAF00007BEB /* Navigatable.swift */; };
+		D9167E5926C4BFD200007BEB /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E5826C4BFD200007BEB /* Navigator.swift */; };
+		D9167E5C26C4C03300007BEB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E5B26C4C03300007BEB /* Router.swift */; };
+		D9167E5E26C4C08700007BEB /* UIViewController + Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E5D26C4C08700007BEB /* UIViewController + Navigator.swift */; };
+		D9167E6026C4C11F00007BEB /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E5F26C4C11F00007BEB /* UIViewController + Alert.swift */; };
+		D9167E6226C4C13D00007BEB /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E6126C4C13D00007BEB /* UIViewController.swift */; };
+		D9167E6426C4C19E00007BEB /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E6326C4C19E00007BEB /* UIApplication.swift */; };
+		D9167E6626C4C1E000007BEB /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E6526C4C1E000007BEB /* ServiceType.swift */; };
+		D9167E6826C4C21800007BEB /* BaseAPIParametersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E6726C4C21800007BEB /* BaseAPIParametersProtocol.swift */; };
+		D9167E6A26C4C27F00007BEB /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E6926C4C27F00007BEB /* AppRouter.swift */; };
+		D9167E6C26C4C32200007BEB /* RootNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E6B26C4C32200007BEB /* RootNavigator.swift */; };
+		D9167E7026C545B800007BEB /* COVIDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E6F26C545B800007BEB /* COVIDAPI.swift */; };
+		D9167E7426C5480A00007BEB /* CountriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E7326C5480A00007BEB /* CountriesAPI.swift */; };
+		D9167E7926C57BCE00007BEB /* CovidNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E7826C57BCE00007BEB /* CovidNetworkable.swift */; };
+		D9167E7D26C5833700007BEB /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E7C26C5833700007BEB /* Country.swift */; };
+		D9167E7F26C583E600007BEB /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E7E26C583E600007BEB /* CountryData.swift */; };
+		D9167E8126C5847500007BEB /* CovidReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E8026C5847500007BEB /* CovidReport.swift */; };
+		D9167E8926C5AB9D00007BEB /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E8826C5AB9D00007BEB /* BaseResponse.swift */; };
+		D9167E8B26C5ADDA00007BEB /* CovidNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E8A26C5ADDA00007BEB /* CovidNetworkManager.swift */; };
+		D9167E8D26C5AEAD00007BEB /* CountriesNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E8C26C5AEAD00007BEB /* CountriesNetworkable.swift */; };
+		D9167E8F26C5AFC900007BEB /* CountriesNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E8E26C5AFC900007BEB /* CountriesNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41EAE8BF35386BB8D572C914 /* Pods-COVID19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19.debug.xcconfig"; path = "Target Support Files/Pods-COVID19/Pods-COVID19.debug.xcconfig"; sourceTree = "<group>"; };
+		467B844584DB801D4039ED86 /* Pods-COVID19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19.release.xcconfig"; path = "Target Support Files/Pods-COVID19/Pods-COVID19.release.xcconfig"; sourceTree = "<group>"; };
+		7B07F72BAB1CC151AE2B4981 /* Pods_COVID19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9167E2826C4B50300007BEB /* COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9167E2B26C4B50400007BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9167E3426C4B50900007BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9167E3726C4B50900007BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9167E3926C4B50900007BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9167E4A26C4BD3B00007BEB /* MoyaServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaServiceHelper.swift; sourceTree = "<group>"; };
+		D9167E4D26C4BEDD00007BEB /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		D9167E5126C4BF2C00007BEB /* UIViewController + NVActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + NVActivityIndicator.swift"; sourceTree = "<group>"; };
+		D9167E5626C4BFAF00007BEB /* Navigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
+		D9167E5826C4BFD200007BEB /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D9167E5B26C4C03300007BEB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D9167E5D26C4C08700007BEB /* UIViewController + Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Navigator.swift"; sourceTree = "<group>"; };
+		D9167E5F26C4C11F00007BEB /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
+		D9167E6126C4C13D00007BEB /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D9167E6326C4C19E00007BEB /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		D9167E6526C4C1E000007BEB /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		D9167E6726C4C21800007BEB /* BaseAPIParametersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIParametersProtocol.swift; sourceTree = "<group>"; };
+		D9167E6926C4C27F00007BEB /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		D9167E6B26C4C32200007BEB /* RootNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigator.swift; sourceTree = "<group>"; };
+		D9167E6F26C545B800007BEB /* COVIDAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDAPI.swift; sourceTree = "<group>"; };
+		D9167E7326C5480A00007BEB /* CountriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAPI.swift; sourceTree = "<group>"; };
+		D9167E7826C57BCE00007BEB /* CovidNetworkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidNetworkable.swift; sourceTree = "<group>"; };
+		D9167E7C26C5833700007BEB /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		D9167E7E26C583E600007BEB /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		D9167E8026C5847500007BEB /* CovidReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidReport.swift; sourceTree = "<group>"; };
+		D9167E8826C5AB9D00007BEB /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		D9167E8A26C5ADDA00007BEB /* CovidNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidNetworkManager.swift; sourceTree = "<group>"; };
+		D9167E8C26C5AEAD00007BEB /* CountriesNetworkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesNetworkable.swift; sourceTree = "<group>"; };
+		D9167E8E26C5AFC900007BEB /* CountriesNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +77,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5206E864D98E6F913CB3BEE7 /* Pods_COVID19.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D8DE5E6E797FDB1D0CF59CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B07F72BAB1CC151AE2B4981 /* Pods_COVID19.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		977BE6D0DCF4E6A4F6F29C31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41EAE8BF35386BB8D572C914 /* Pods-COVID19.debug.xcconfig */,
+				467B844584DB801D4039ED86 /* Pods-COVID19.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D9167E1F26C4B50300007BEB = {
 			isa = PBXGroup;
 			children = (
 				D9167E2A26C4B50400007BEB /* COVID19 */,
 				D9167E2926C4B50300007BEB /* Products */,
+				977BE6D0DCF4E6A4F6F29C31 /* Pods */,
+				8D8DE5E6E797FDB1D0CF59CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				D9167E2B26C4B50400007BEB /* AppDelegate.swift */,
+				D9167E6926C4C27F00007BEB /* AppRouter.swift */,
+				D9167E6B26C4C32200007BEB /* RootNavigator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -96,6 +170,8 @@
 		D9167E4326C4B63600007BEB /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D9167E5326C4BF8B00007BEB /* Models */,
+				D9167E4F26C4BEE200007BEB /* Helper */,
 				D9167E4526C4B64300007BEB /* Custom UI */,
 				D9167E4426C4B63B00007BEB /* Extensions */,
 			);
@@ -105,6 +181,7 @@
 		D9167E4426C4B63B00007BEB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D9167E5026C4BF0100007BEB /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -112,6 +189,7 @@
 		D9167E4526C4B64300007BEB /* Custom UI */ = {
 			isa = PBXGroup;
 			children = (
+				D9167E4C26C4BED000007BEB /* Views */,
 			);
 			path = "Custom UI";
 			sourceTree = "<group>";
@@ -127,6 +205,8 @@
 		D9167E4726C4B65900007BEB /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				D9167E6E26C545A300007BEB /* Modules */,
+				D9167E4926C4BC2900007BEB /* Base */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -138,6 +218,142 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		D9167E4926C4BC2900007BEB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E4A26C4BD3B00007BEB /* MoyaServiceHelper.swift */,
+				D9167E6526C4C1E000007BEB /* ServiceType.swift */,
+				D9167E6726C4C21800007BEB /* BaseAPIParametersProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D9167E4C26C4BED000007BEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9167E4F26C4BEE200007BEB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E4D26C4BEDD00007BEB /* ActivityIndicator.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D9167E5026C4BF0100007BEB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E6326C4C19E00007BEB /* UIApplication.swift */,
+				D9167E6126C4C13D00007BEB /* UIViewController.swift */,
+				D9167E5126C4BF2C00007BEB /* UIViewController + NVActivityIndicator.swift */,
+				D9167E5D26C4C08700007BEB /* UIViewController + Navigator.swift */,
+				D9167E5F26C4C11F00007BEB /* UIViewController + Alert.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		D9167E5326C4BF8B00007BEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E7A26C57BDE00007BEB /* Response */,
+				D9167E6D26C4C40000007BEB /* DateSource */,
+				D9167E5426C4BF9100007BEB /* Navigation */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9167E5426C4BF9100007BEB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E5526C4BF9900007BEB /* Base */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D9167E5526C4BF9900007BEB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E5626C4BFAF00007BEB /* Navigatable.swift */,
+				D9167E5826C4BFD200007BEB /* Navigator.swift */,
+				D9167E5B26C4C03300007BEB /* Router.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D9167E6D26C4C40000007BEB /* DateSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DateSource;
+			sourceTree = "<group>";
+		};
+		D9167E6E26C545A300007BEB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E7226C547EC00007BEB /* Countries API */,
+				D9167E7126C547E000007BEB /* COVID API */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D9167E7126C547E000007BEB /* COVID API */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E6F26C545B800007BEB /* COVIDAPI.swift */,
+				D9167E7826C57BCE00007BEB /* CovidNetworkable.swift */,
+				D9167E8A26C5ADDA00007BEB /* CovidNetworkManager.swift */,
+			);
+			path = "COVID API";
+			sourceTree = "<group>";
+		};
+		D9167E7226C547EC00007BEB /* Countries API */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E7326C5480A00007BEB /* CountriesAPI.swift */,
+				D9167E8C26C5AEAD00007BEB /* CountriesNetworkable.swift */,
+				D9167E8E26C5AFC900007BEB /* CountriesNetworkManager.swift */,
+			);
+			path = "Countries API";
+			sourceTree = "<group>";
+		};
+		D9167E7A26C57BDE00007BEB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E8726C5AB4500007BEB /* Base */,
+				D9167E8526C5AB1C00007BEB /* RestCountry */,
+				D9167E8626C5AB3A00007BEB /* Covid */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		D9167E8526C5AB1C00007BEB /* RestCountry */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E7C26C5833700007BEB /* Country.swift */,
+			);
+			path = RestCountry;
+			sourceTree = "<group>";
+		};
+		D9167E8626C5AB3A00007BEB /* Covid */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E7E26C583E600007BEB /* CountryData.swift */,
+				D9167E8026C5847500007BEB /* CovidReport.swift */,
+			);
+			path = Covid;
+			sourceTree = "<group>";
+		};
+		D9167E8726C5AB4500007BEB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E8826C5AB9D00007BEB /* BaseResponse.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +361,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9167E3C26C4B50900007BEB /* Build configuration list for PBXNativeTarget "COVID19" */;
 			buildPhases = (
+				FD0B466DE401B9F93287D8E5 /* [CP] Check Pods Manifest.lock */,
 				D9167E2426C4B50300007BEB /* Sources */,
 				D9167E2526C4B50300007BEB /* Frameworks */,
 				D9167E2626C4B50300007BEB /* Resources */,
+				1BA78A756388D46C8C498745 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,12 +421,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BA78A756388D46C8C498745 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0B466DE401B9F93287D8E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-COVID19-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9167E2426C4B50300007BEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9167E6826C4C21800007BEB /* BaseAPIParametersProtocol.swift in Sources */,
+				D9167E5E26C4C08700007BEB /* UIViewController + Navigator.swift in Sources */,
+				D9167E7926C57BCE00007BEB /* CovidNetworkable.swift in Sources */,
+				D9167E6026C4C11F00007BEB /* UIViewController + Alert.swift in Sources */,
+				D9167E8F26C5AFC900007BEB /* CountriesNetworkManager.swift in Sources */,
+				D9167E5726C4BFAF00007BEB /* Navigatable.swift in Sources */,
+				D9167E8B26C5ADDA00007BEB /* CovidNetworkManager.swift in Sources */,
+				D9167E6A26C4C27F00007BEB /* AppRouter.swift in Sources */,
+				D9167E7F26C583E600007BEB /* CountryData.swift in Sources */,
+				D9167E6426C4C19E00007BEB /* UIApplication.swift in Sources */,
+				D9167E8126C5847500007BEB /* CovidReport.swift in Sources */,
+				D9167E7D26C5833700007BEB /* Country.swift in Sources */,
 				D9167E2C26C4B50400007BEB /* AppDelegate.swift in Sources */,
+				D9167E6226C4C13D00007BEB /* UIViewController.swift in Sources */,
+				D9167E7426C5480A00007BEB /* CountriesAPI.swift in Sources */,
+				D9167E7026C545B800007BEB /* COVIDAPI.swift in Sources */,
+				D9167E5226C4BF2C00007BEB /* UIViewController + NVActivityIndicator.swift in Sources */,
+				D9167E5C26C4C03300007BEB /* Router.swift in Sources */,
+				D9167E4E26C4BEDD00007BEB /* ActivityIndicator.swift in Sources */,
+				D9167E4B26C4BD3B00007BEB /* MoyaServiceHelper.swift in Sources */,
+				D9167E5926C4BFD200007BEB /* Navigator.swift in Sources */,
+				D9167E6626C4C1E000007BEB /* ServiceType.swift in Sources */,
+				D9167E6C26C4C32200007BEB /* RootNavigator.swift in Sources */,
+				D9167E8926C5AB9D00007BEB /* BaseResponse.swift in Sources */,
+				D9167E8D26C5AEAD00007BEB /* CountriesNetworkable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +628,7 @@
 		};
 		D9167E3D26C4B50900007BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EAE8BF35386BB8D572C914 /* Pods-COVID19.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -364,6 +649,7 @@
 		};
 		D9167E3E26C4B50900007BEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467B844584DB801D4039ED86 /* Pods-COVID19.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

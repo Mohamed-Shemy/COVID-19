@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Kingfisher (6.3.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - Moya
+  - NVActivityIndicatorView (from `https://github.com/ninjaprox/NVActivityIndicatorView.git`, tag `4.8.0`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - Moya
+
+EXTERNAL SOURCES:
+  NVActivityIndicatorView:
+    :git: https://github.com/ninjaprox/NVActivityIndicatorView.git
+    :tag: 4.8.0
+
+CHECKOUT OPTIONS:
+  NVActivityIndicatorView:
+    :git: https://github.com/ninjaprox/NVActivityIndicatorView.git
+    :tag: 4.8.0
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  NVActivityIndicatorView: 24b713d5140767dc43097cd9d5ff719ff0660bdc
+
+PODFILE CHECKSUM: b06586398a855442ccdf7758bb86c0e726678172
+
+COCOAPODS: 1.10.2

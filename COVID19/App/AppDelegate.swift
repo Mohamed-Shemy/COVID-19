@@ -10,8 +10,12 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
+    private var appRouter = AppRouter()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
+        appRouter.launchFirstScreen()
+        
         return true
     }
 }
