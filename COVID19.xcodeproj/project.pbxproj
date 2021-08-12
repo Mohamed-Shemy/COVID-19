@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D9167E2C26C4B50400007BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E2B26C4B50400007BEB /* AppDelegate.swift */; };
-		D9167E2E26C4B50400007BEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E2D26C4B50400007BEB /* SceneDelegate.swift */; };
-		D9167E3026C4B50400007BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167E2F26C4B50400007BEB /* ViewController.swift */; };
-		D9167E3326C4B50400007BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9167E3126C4B50400007BEB /* Main.storyboard */; };
 		D9167E3526C4B50900007BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9167E3426C4B50900007BEB /* Assets.xcassets */; };
 		D9167E3826C4B50900007BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9167E3626C4B50900007BEB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +15,6 @@
 /* Begin PBXFileReference section */
 		D9167E2826C4B50300007BEB /* COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9167E2B26C4B50400007BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9167E2D26C4B50400007BEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9167E2F26C4B50400007BEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D9167E3226C4B50400007BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9167E3426C4B50900007BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9167E3726C4B50900007BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9167E3926C4B50900007BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +50,92 @@
 		D9167E2A26C4B50400007BEB /* COVID19 */ = {
 			isa = PBXGroup;
 			children = (
-				D9167E2B26C4B50400007BEB /* AppDelegate.swift */,
-				D9167E2D26C4B50400007BEB /* SceneDelegate.swift */,
-				D9167E2F26C4B50400007BEB /* ViewController.swift */,
-				D9167E3126C4B50400007BEB /* Main.storyboard */,
-				D9167E3426C4B50900007BEB /* Assets.xcassets */,
-				D9167E3626C4B50900007BEB /* LaunchScreen.storyboard */,
-				D9167E3926C4B50900007BEB /* Info.plist */,
+				D9167E3F26C4B55800007BEB /* App */,
+				D9167E4026C4B59100007BEB /* Configurations */,
+				D9167E4126C4B59800007BEB /* Resources */,
+				D9167E4326C4B63600007BEB /* Core */,
+				D9167E4626C4B65200007BEB /* Services */,
+				D9167E4226C4B5AE00007BEB /* Screens */,
+				D9167E4826C4B66300007BEB /* Modules */,
 			);
 			path = COVID19;
+			sourceTree = "<group>";
+		};
+		D9167E3F26C4B55800007BEB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E2B26C4B50400007BEB /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D9167E4026C4B59100007BEB /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E3926C4B50900007BEB /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		D9167E4126C4B59800007BEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E3426C4B50900007BEB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9167E4226C4B5AE00007BEB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E3626C4B50900007BEB /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D9167E4326C4B63600007BEB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E4526C4B64300007BEB /* Custom UI */,
+				D9167E4426C4B63B00007BEB /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D9167E4426C4B63B00007BEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9167E4526C4B64300007BEB /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		D9167E4626C4B65200007BEB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D9167E4726C4B65900007BEB /* Remote */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D9167E4726C4B65900007BEB /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		D9167E4826C4B66300007BEB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +166,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Mohamed Shemy";
 				TargetAttributes = {
 					D9167E2726C4B50300007BEB = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -126,7 +198,6 @@
 			files = (
 				D9167E3826C4B50900007BEB /* LaunchScreen.storyboard in Resources */,
 				D9167E3526C4B50900007BEB /* Assets.xcassets in Resources */,
-				D9167E3326C4B50400007BEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9167E3026C4B50400007BEB /* ViewController.swift in Sources */,
 				D9167E2C26C4B50400007BEB /* AppDelegate.swift in Sources */,
-				D9167E2E26C4B50400007BEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D9167E3126C4B50400007BEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9167E3226C4B50400007BEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D9167E3626C4B50900007BEB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +349,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
-				INFOPLIST_FILE = COVID19/Info.plist;
+				INFOPLIST_FILE = COVID19/Configurations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +369,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
-				INFOPLIST_FILE = COVID19/Info.plist;
+				INFOPLIST_FILE = COVID19/Configurations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
