@@ -10,7 +10,7 @@ import Foundation
 
 extension Int
 {
-    var asValue: String { "\(self)" }
+    var asString: String { "\(self)" }
     
     func inRange<T>(of array: Array<T>) -> Bool
     {

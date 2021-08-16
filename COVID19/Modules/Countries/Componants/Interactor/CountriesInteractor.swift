@@ -48,8 +48,9 @@ class CountriesInteractor: CountriesInteractorDelegate
                 case let .success(response):
                     self.presenter?.didRecive(countries: response)
                     
-                case let .failure(error):
-                    self.presenter?.didRecive(error: .unkown(error.localizedDescription))
+                case .failure:
+                    self.presenter?.didRecive(countries: [])
+                    self.presenter?.didRecive(error: .noResult(key))
             }
         }
     }

@@ -22,7 +22,8 @@ extension BaseAPIParametersProtocol
     {
         [
             "x-rapidapi-key": "a44a07a416msh9c394cb3ec4cbcfp17cda0jsnd7ab4c5ce943",
-            "x-rapidapi-host": "covid-19-data.p.rapidapi.com"
+            "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
+            "content-type": "application/json",
         ]
     }
 }

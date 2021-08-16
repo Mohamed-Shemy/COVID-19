@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (5.4.3)
-  - Kingfisher (6.3.1)
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
+  - Kingfisher (6.3.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -8,17 +11,22 @@ PODS:
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
 
 DEPENDENCIES:
   - Kingfisher
   - Moya
   - NVActivityIndicatorView (from `https://github.com/ninjaprox/NVActivityIndicatorView.git`, tag `4.8.0`)
+  - SVGKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CocoaLumberjack
     - Kingfisher
     - Moya
+    - SVGKit
 
 EXTERNAL SOURCES:
   NVActivityIndicatorView:
@@ -32,10 +40,12 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   NVActivityIndicatorView: 24b713d5140767dc43097cd9d5ff719ff0660bdc
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
 
-PODFILE CHECKSUM: b06586398a855442ccdf7758bb86c0e726678172
+PODFILE CHECKSUM: 621e5b505ddade271d5c28f7dbb6132638f576c1
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.10.1

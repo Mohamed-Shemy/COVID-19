@@ -12,10 +12,10 @@ typealias RootRouter = Router<RootNavigator, UINavigationController>
 
 enum RootNavigator: Navigatable
 {
+    case home
     
     var viewController: UIViewController
     {
-        #warning("Not implemented yet")
-        fatalError("Not implemented yet")
+        HomeViewController()
     }
 }

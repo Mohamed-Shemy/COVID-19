@@ -17,9 +17,16 @@ protocol CovidViewDelegate: AnyObject
     var interactor: CovidInteractorDelegate? { get set }
     var router: HomeRouter? { get set }
     
-    func display(country data: CountryDataViewModel)
-    func display(daily report: CovidReportViewModel)
+    func display(country data: CountryDataViewModel, _ dataSource: ReportValuesTableViewDataSource)
+    func display(daily report: CovidReportViewModel, _ dataSource: ReportValuesTableViewDataSource)
     func display(error message: AlertMessage)
+}
+
+extension CovidViewDelegate
+{
+    var router: HomeRouter? { nil }
+    func display(country data: CountryDataViewModel, _ dataSource: ReportValuesTableViewDataSource) { }
+    func display(daily report: CovidReportViewModel, _ dataSource: ReportValuesTableViewDataSource) { }
 }
 
 // MARK: Interactor

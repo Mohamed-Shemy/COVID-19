@@ -12,6 +12,9 @@ enum AlertMessage
 {
     // MARK:- Cases
     
+    case noResult(String)
+    case noReports(String)
+    
     case unkown(String)
     
     // MARK:- init
@@ -27,6 +30,9 @@ enum AlertMessage
     {
         switch self
         {
+            case let .noResult(key): return "No result matches: \(key)"
+            case let .noReports(date): return "No reports in \(date)"
+                
             case let .unkown(message): return message
         }
     }

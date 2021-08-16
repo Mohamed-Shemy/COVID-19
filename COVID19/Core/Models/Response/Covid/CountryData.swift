@@ -48,3 +48,12 @@ struct CountryDataViewModel
     let lastChange: String
     let lastUpdate: String
 }
+
+extension CountryDataViewModel
+{
+    var covidReport: CovidReportViewModel
+    {
+        let active = max(confirmed - (recovered + deaths + critical), 0)
+        return .init(confirmed: confirmed, recovered: recovered, deaths: deaths, active: active, critical: critical, date: lastUpdate)
+    }
+}

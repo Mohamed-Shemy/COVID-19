@@ -10,5 +10,5 @@ import Foundation
 
 typealias CountriesResponse = [Country]
 
-typealias CountryDataResponse = [String: CountryData]
-typealias CovidReportResponse = [String: CovidReport]
+typealias CountryDataResponse = [CountryData]
+typealias CovidReportResponse = [CovidReport]

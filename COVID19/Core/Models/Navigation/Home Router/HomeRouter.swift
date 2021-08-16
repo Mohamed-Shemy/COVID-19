@@ -13,15 +13,14 @@ typealias HomeRouter = Router<HomeNavigator, UIViewController>
 enum HomeNavigator: Navigatable
 {
     case search
-    case country(Country)
+    case country(CountryViewModel)
     
     var viewController: UIViewController
     {
-        #warning("Not implemented yet")
         switch self
         {
-            case .search: return UIViewController()
-            case let .country(country): return UIViewController()
+            case .search: return CountriesViewController()
+            case let .country(country): return CountryViewController(country)
         }
     }
 }

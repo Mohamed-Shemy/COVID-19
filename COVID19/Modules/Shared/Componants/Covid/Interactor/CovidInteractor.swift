@@ -28,7 +28,7 @@ class CovidInteractor: CovidInteractorDelegate
     
     func getLatestCountryData(by code: String)
     {
-        if let _ = countriesData[code]
+        if countriesData[code] != nil
         {
             presentCountryData(by: code)
         }
@@ -43,7 +43,7 @@ class CovidInteractor: CovidInteractorDelegate
         networkManager.getDailyReportTotals(in: date)
         { [weak self] result in
             guard let self = self else { return }
-            
+
             switch result
             {
                 case let .success(response):
@@ -78,7 +78,7 @@ class CovidInteractor: CovidInteractorDelegate
     private func saveNewCountryData(_ response: CountryDataResponse, code: String)
     {
         guard !response.isEmpty,
-              let countryData = response["0"]
+              let countryData = response.first
         else { return }
         
         countriesData[code] = countryData
@@ -94,7 +94,7 @@ class CovidInteractor: CovidInteractorDelegate
     private func presentCovid(dailyReport response: CovidReportResponse)
     {
         guard !response.isEmpty,
-              let report = response["0"]
+              let report = response.first
         else { return }
         
         presenter?.didRecive(daily: report)

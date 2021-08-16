@@ -10,6 +10,8 @@ import UIKit
 
 typealias ConfigurableTableViewCell = UITableViewCell & Configurable
 
+typealias ReportValuesTableViewDataSource = TableViewDataSource<ReportValue, ReportTableViewCell>
+
 class TableViewDataSource<Model, Cell: ConfigurableTableViewCell>: NSObject, UITableViewDataSource, UITableViewDelegate
 where Cell.Model == Model
 {

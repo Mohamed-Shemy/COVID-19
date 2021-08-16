@@ -11,6 +11,7 @@ target 'COVID19' do
   
   # Image Caching
   pod 'Kingfisher'
+  pod 'SVGKit'
   
   #
   pod 'NVActivityIndicatorView', :git => 'https://github.com/ninjaprox/NVActivityIndicatorView.git', :tag => '4.8.0'

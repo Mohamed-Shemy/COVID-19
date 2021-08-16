@@ -37,7 +37,7 @@ class AppRouter
     
     func launchFirstScreen()
     {
-        #warning("launchFirstScreen")
+        router.navigate(to: .home)
     }
     
     // MARK:- Helpers

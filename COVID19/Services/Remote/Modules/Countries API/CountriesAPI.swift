@@ -22,7 +22,10 @@ extension CountriesAPI: TargetType, BaseAPIParametersProtocol
     
     var path: String
     {
-        "name"
+        switch self
+        {
+            case let .searchByName(name): return "name/\(name)"
+        }
     }
     
     var method: Method
