@@ -20,4 +20,31 @@ struct CountryData: Codable
     let longitude: Double?
     let lastChange: String?
     let lastUpdate: String?
+    
+    var viewModel: CountryDataViewModel?
+    {
+        guard let country = country,
+              let code = code
+        else { return nil }
+        
+        return CountryDataViewModel(country: country, code: code,
+                                    confirmed: confirmed ?? 0, recovered: recovered ?? 0,
+                                    critical: critical ?? 0, deaths: deaths ?? 0,
+                                    latitude: latitude ?? 0, longitude: longitude ?? 0,
+                                    lastChange: lastChange ?? "", lastUpdate: lastUpdate ?? "")
+    }
+}
+
+struct CountryDataViewModel
+{
+    let country: String
+    let code: String
+    let confirmed: Int
+    let recovered: Int
+    let critical: Int
+    let deaths: Int
+    let latitude: Double
+    let longitude: Double
+    let lastChange: String
+    let lastUpdate: String
 }
