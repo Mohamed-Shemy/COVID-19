@@ -27,6 +27,11 @@ class HomeViewController: UIViewController
     {
         super.viewDidLoad()
         setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
         getDailyReport()
     }
     
@@ -104,6 +109,8 @@ extension HomeViewController: CovidViewDelegate
     {
         set(report: dataSource)
         setHeader(from: report)
+        
+        noDataLabel.isHidden = true
     }
     
     func display(error message: AlertMessage)

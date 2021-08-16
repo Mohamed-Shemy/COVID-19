@@ -21,7 +21,7 @@ class MoyaService<T: TargetType>
         let networkActivityClosure: NetworkActivityPlugin.NetworkActivityClosure = Self.networkActivityAction
         let networkActivityPlugin = NetworkActivityPlugin(networkActivityClosure: networkActivityClosure)
         
-        let plugins: [PluginType] = [networkActivityPlugin, NetworkLoggerPlugin()]
+        let plugins: [PluginType] = [networkActivityPlugin]
         let serviceType = type == .live ? MoyaProvider<T>.neverStub : MoyaProvider<T>.immediatelyStub
         
         self.provider = MoyaProvider<T>(stubClosure: serviceType, plugins: plugins)
@@ -50,8 +50,6 @@ class MoyaService<T: TargetType>
         do
         {
             let decoder = JSONDecoder()
-            let json = String(data: value.data, encoding: .utf8)
-            print(json)
             let response = try decoder.decode(C.self, from: value.data)
             completion(.success(response))
         }

@@ -116,12 +116,13 @@ extension CountriesViewController: CountriesViewDelegate
     func display(countries dataSource: CountriesCollectionViewDataSource)
     {
         set(countries: dataSource)
+        
+        noResultLabel.isHidden = true
     }
     
     func display(error message: AlertMessage)
     {
         noResultLabel.isHidden = false
-        let searchText = searchController.searchBar.text ?? ""
         noResultLabel.text = message.value
     }
 }
